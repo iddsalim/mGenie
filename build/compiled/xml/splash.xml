@@ -1,0 +1,4 @@
+<container style="layout:borderlayout">
+    <picture src="mgenie_logo_195px.png" />
+    <text style="layout-data:bld(south)" text="mGenie Alpha 1.0, (c) Xema Labs, Kenya" />
+</container>

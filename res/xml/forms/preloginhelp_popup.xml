@@ -1,0 +1,18 @@
+<screen title="mGenie - About" cleanUpWhenRemoved="true">
+    <tabfolder>
+        <tabitem label="About mGenie">
+            <scrollPane>
+                <textarea class="textareademo" styled="true">
+                    mGenie Version 1.0&lt;br/&gt;
+                    by Idd Salim of Xema Labs.&lt;br/&gt; &lt;br/&gt;
+                    mGenie is a real-time information retrieval service that enables you get data from various service providers using a very simple Chat syntax as a query and delivery medium. The service providers are 3rd-parties that deliver the data from their internal systems.&lt;br/&gt; &lt;br/&gt;</textarea>
+            </scrollPane>
+        </tabitem>
+        <tabitem label="Help">
+            <scrollPane>
+                <textarea class="textareademo" styled="true">To use mGenie, login to your account, go to services, select 'Use' from the right menu and then type the word help, to see the various offering by the service. Interact with the service as advised</textarea>
+            </scrollPane>
+        </tabitem>
+    </tabfolder>
+    <screenfirstmenu onAction="back">Back</screenfirstmenu>
+</screen>

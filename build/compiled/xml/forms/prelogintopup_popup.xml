@@ -1,0 +1,22 @@
+<screen title="mGenie - About" cleanUpWhenRemoved="true">
+    <tabfolder>
+        <tabitem label="Mpesa Topup">
+            <scrollPane>
+                <textarea class="textareademo" styled="true">
+                    Go to Mpesa&lt;br/&gt;
+                    Select PayBill&lt;br/&gt; &lt;br/&gt;
+                    Enter 224466 as Paybill Number.&lt;br/&gt; &lt;br/&gt;
+                    Enter your login name as 'Account'.&lt;br/&gt; &lt;br/&gt;
+                    Enter amount e.g. 50.&lt;br/&gt; &lt;br/&gt;
+                    This will be your mGenie eWallet amount and service charges will be deducted from this amount.&lt;br/&gt; &lt;br/&gt;
+                    </textarea>
+            </scrollPane>
+        </tabitem>
+        <tabitem label="Zap">
+            <scrollPane>
+                <textarea class="textareademo" styled="true">Zap support to be enabled soon.</textarea>
+            </scrollPane>
+        </tabitem>
+    </tabfolder>
+    <screenfirstmenu onAction="back">Back</screenfirstmenu>
+</screen>

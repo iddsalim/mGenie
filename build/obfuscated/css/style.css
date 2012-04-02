@@ -1,0 +1,367 @@
+desktop {
+	bg-color: #003d3d;
+	bg-image: url(mgenie_bg.png);
+	color: white;
+}
+
+screen {
+	transition: slide(left);
+}
+
+screentopbar {
+	padding: -3 -10 -9 -10;
+	bg-color: #006ca5;
+	border: 8 15 14 15;
+	border-image: url(mgenie_topbar.png) 8 15 14 15;
+}
+
+screentopbar text {
+	layout-data: sld(left, 1, -1);
+	font-style: bold;
+	color: white;
+	align: center;
+}
+
+screenbottombar {
+	bg-color: none;
+	color: white;
+}
+
+screenfirstmenu,popupboxfirstmenuitem {
+	border: 10 14 10 10;
+	border-image: url(m.png) 10 14 10 10;
+	bg-color: #e95711;
+	min-size: 30 0;
+	padding: -6 -6 -8 -6;
+	align: left;
+}
+
+screensecondmenu,popupboxsecondmenuitem {
+	border: 10 10 10 14;
+	border-image: url(m.png,0,0,59,46,mirror) 10 10 10 14;
+	bg-color: #e95711;
+	min-size: 30 0;
+	padding: -6 -6 -8 -6;
+	align: right;
+}
+
+popupboxbottombar {
+	bg-image: url(mgenie_bg.png);
+}
+
+button {
+	margin: 1;
+	padding: -5 -5 2 -5;
+	font-style: bold;
+	color: white;
+	bg-color: black;
+	bg-image: url(bt.png,15,35,15,12);
+	bg-repeat: 0 1;
+	bg-align: bottom;
+	border: 10 15 3 15;
+	border-image: url(bt.png) 10 15 3 15;
+	border-align: none none bottom none none none bottom none;
+}
+
+button:hover {
+	bg-image: url(bt_h.png,15,35,15,12);
+	border-image: url(bt_h.png) 10 15 3 15;
+}
+
+button:disabled {
+	color: #808080;
+}
+
+choice {
+	bg-image: url(arrow.png);
+	bg-repeat: 1 1;
+	bg-align: right;
+}
+
+textfield,choice {
+	border: 3;
+	border-image: url(tf.png) 3 3 3 3;
+	bg-color: #dddddd;
+	color: black;
+}
+
+textfield:hover,choice:hover {
+	border-image: url(tf_h.png) 3 3 3 3;
+	bg-color: #e2b395;
+}
+
+text.tooltip {
+	bg-color: #e95711;
+	color: white;
+	padding: 0 2 0 2;
+	font-size: small;
+}
+
+.formEntry {
+	border: 0 0 1 0;
+	margin: 0 0 3 0;
+	padding: 0 0 2 0;
+	border-color: #325c5c;
+}
+
+radiobutton {
+	bg-image: url(rb.png,0,0,13,13);
+	bg-align: left;
+	bg-repeat: 1 1;
+	padding: 0 3 0 16;
+	align: left;
+}
+
+radiobutton:hover {
+	bg-image: url(rb.png,13,0,13,13);
+}
+
+radiobutton:selected {
+	bg-image: url(rb.png,26,0,13,13);
+}
+
+radiobutton:hover:selected {
+	bg-image: url(rb.png,39,0,13,13);
+}
+
+tabitembutton {
+	padding: -3 0 -2 1;
+	border: 7 8 6 7;
+	border-image: url(tb.png) 7 8 6 7;
+	bg-color: #003d3d;
+	color: #e95711;
+}
+
+tabitembutton:selected {
+	border-image: url(tb_s.png) 7 8 6 7;
+	bg-color: #003d3d;
+}
+
+tabitembutton:disabled {
+	border-image: url(tb_d.png) 7 8 6 7;
+	bg-color: #003736;
+	color: #616464;
+}
+
+tabfolderbuttonscontainer {
+	bg-image: url(tb.png,0,23,31,1);
+	bg-repeat: 0 1;
+	bg-align: bottom;
+}
+
+tabfolderbuttonscontainer {
+	align: right;
+}
+
+tabfolder.library tabfolderbuttonscontainer {
+	align: left;
+}
+
+text.label {
+	color: white;
+}
+
+.separator {
+	min-size: 0 1;
+	bg-color: #325455;
+	margin: 2 0 2 0;
+}
+
+scrollpane scrollpanecontainer {
+	padding: 4;
+}
+
+scrollbar {
+	padding: 1 0 0 2;
+	border: 0 1 1 0;
+	border-color: #485f5f;
+	bg-color: #002626;
+}
+
+scrollbarbar {
+	min-size: 3 3;
+	border: 1;
+	border-image: url(sbb.png) 1 1 1 1;
+	bg-color: #e95711;
+}
+
+listitem {
+	gap: 5 0;
+}
+
+checkbox,radiobutton,listitem {
+	border-color: none;
+}
+
+tabitem checkbox:hover,tabitem radiobutton:hover,choicescreen radiobutton:hover,listitem:hover
+	{
+	border-color: #a5bebd;
+	bg-color: #245757;
+	color: white;
+}
+
+checkbox {
+	bg-image: url(chk.png,0,0,11,11);
+	bg-align: left;
+	bg-repeat: 1 1;
+	padding: 0 0 0 20;
+	align: left;
+}
+
+checkbox:hover {
+	bg-image: url(chk.png,11,0,11,11);
+}
+
+checkbox:selected {
+	bg-image: url(chk.png,22,0,11,11);
+}
+
+checkbox:hover:selected {
+	bg-image: url(chk.png,33,0,11,11);
+}
+
+menupopup {
+	border: 7;
+	border-image: url(mb.png) 7 7 7 7;
+	padding: -1;
+	bg-color: #2d3030;
+	color: white;
+}
+
+menupopup .separator {
+	min-size: 0 1;
+	bg-color: #62676c;
+	margin: 1 0 1 0;
+}
+
+menuitem {
+	padding: 1 2 1 2;
+}
+
+menu {
+	padding: 1 18 1 2;
+	bg-image: url(ma.png);
+	bg-repeat: 1 1;
+	bg-align: right;
+	color: white;
+}
+
+menu:hover,menuitem:hover {
+	bg-color: #613a2f;
+}
+
+popupbox {
+	border: 7;
+	border-image: url(mb.png) 7 7 7 7;
+	padding: 0;
+	bg-color: #2d3030;
+	layout-data: sld(center, .9, -1);
+}
+
+popupbox textarea {
+	align: center;
+}
+
+popupboxbuttonscontainer {
+	align: center;
+	padding: 2;
+}
+
+popupbox.splash {
+	layout-data: sld(center, .8, .8);
+	bg-color: #55565a;
+}
+
+/*******************************************************************************/
+container.library {
+	padding: 2;
+}
+
+radiogroup.mixed radiobutton {
+	layout: inlinelayout(true, center);
+	gap: 4 0;
+}
+
+radiobutton.flags {
+	padding: 0;
+	border: 1;
+	align: center;
+}
+
+radiobutton.flags:hover {
+	border-color: black;
+}
+
+textarea {
+	align: center;
+}
+
+textarea.library {
+	align: left;
+}
+
+textarea.textareademo {
+	align: left;
+	font-size: large;
+}
+
+text.white {
+	bg-color: white;
+	color: black;
+}
+
+text.black {
+	bg-color: black;
+	color: white;
+}
+
+gauge {
+	border: 5 10 5 10;
+	border-image: url(g.png) 5 10 5 10;
+	bg-color: #002020;
+	padding: -5 -10 -5 -10;
+}
+
+gaugebar {
+	border: 5 10 5 10;
+	bg-color: #e95711;
+	border-image: url(gb.png) 5 10 5 10;
+}
+
+popupbox.splash text {
+	color: white;
+	align: center;
+	font-size: large;
+}
+
+.child1 {
+	bg-color: #FF0000;
+}
+
+.child2 {
+	bg-color: #00FF00;
+}
+
+.child3 {
+	bg-color: #0000FF;
+}
+
+.child4 {
+	bg-color: #FFFF00;
+}
+
+.child5 {
+	bg-color: #00FFFF;
+}
+
+.child6 {
+	bg-color: #FF00FF;
+}
+
+.child7 {
+	bg-color: #FFFFFF;
+}
+
+.child8 {
+	bg-color: #000000;
+}

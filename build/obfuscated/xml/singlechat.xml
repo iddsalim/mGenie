@@ -1,0 +1,5 @@
+<popupBox class="library" style="align:fill-center;layout:borderlayout">
+	<textfield id="txtCommand" tooltip="name" />
+	<popupBoxFirstMenuItem onAction="sendXMPP(#txtCommand.text)">Send</popupBoxFirstMenuItem>
+	<popupBoxSecondMenuItem>%CANCEL%</popupBoxSecondMenuItem>
+</popupBox>

@@ -1,0 +1,19 @@
+<screen>
+	<_title>%LOGIN_TITLE%</_title>
+	<scrollPane style="align:fill-center;layout:inlinelayout(false,fill);gap:0 5">
+
+		<container class="formEntry" style="layout:gridlayout(2,1)">
+                    %JOIN_USERNAME%
+                    <textfield id="uname"></textfield>
+		</container>
+
+		<container class="formEntry" style="layout:gridlayout(2,1)">
+                    %JOIN_PASSWORD%
+                    <textfield id="pass" constraints="password" style="align:right">
+                    </textfield>
+		</container>
+
+		<button onAction="processLogin(#uname.text, #pass.text)">%LOGIN_BUTTON%</button>
+	</scrollPane>
+	<screenfirstmenu onAction="back">%CANCEL%</screenfirstmenu>
+</screen>

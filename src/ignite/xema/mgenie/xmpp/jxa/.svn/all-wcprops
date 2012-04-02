@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/167/trunk/BTalk_45/src/net/sourceforge/jxa
+END
+Jxa.java
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/167/trunk/BTalk_45/src/net/sourceforge/jxa/Jxa.java
+END
+XmlReader.java
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/127/trunk/BTalk_45/src/net/sourceforge/jxa/XmlReader.java
+END
+Base64.java
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/115/trunk/BTalk_45/src/net/sourceforge/jxa/Base64.java
+END
+XmppListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/115/trunk/BTalk_45/src/net/sourceforge/jxa/XmppListener.java
+END
+XmlWriter.java
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/123/trunk/BTalk_45/src/net/sourceforge/jxa/XmlWriter.java
+END

@@ -1,0 +1,47 @@
+<screen style="align:center;layout:inlinelayout(false,fill)" title="KUIX">
+	<screenTopBar><picture src="icon.png" style="layout-data:sld(left,-1,-1)"/></screenTopBar>
+	<button onAction="demo(8)">Widgets</button>
+	<button onAction="demo(0)">Layouts</button>
+	<button onAction="apps(0)">Form</button>
+	<textarea text="&lt;i&gt;(c) &lt;b&gt;Kalmeo&lt;/b&gt; 2008&lt;/i&gt;" styled="true" style="align:center;layout-data:bld(south);color: #aaf4e0;" />
+	<screenfirstmenu>
+		More
+		<menupopup>
+			<menu>
+				Demos
+				<menupopup>
+                                    <menuitem onAction="demo(8)">Widgets</menuitem>
+                                    <menu>
+                                        Layout
+                                        <menupopup>
+                                            <menuitem onAction="demo(0)">borderLayout</menuitem>
+                                            <menuitem onAction="demo(1)">gridLayout</menuitem>
+                                            <menuitem onAction="demo(2)">flowLayout</menuitem>
+                                            <menuitem onAction="demo(3)">staticLayout</menuitem>
+                                            <menuitem onAction="demo(4)">inLineLayout</menuitem>
+                                            <menuitem onAction="demo(7)">tableLayout</menuitem>
+                                        </menupopup>
+                                    </menu>
+                                    <menu>
+                                        Progress
+                                        <menupopup>
+                                            <menuitem onAction="progress">Worker Progress</menuitem>
+                                            <menuitem onAction="threadProgress">Thread Progress</menuitem>
+                                        </menupopup>
+                                    </menu>
+				</menupopup>
+			</menu>
+			<menu>
+				Applications
+				<menupopup>
+					<menuitem onAction="apps(0)">Form</menuitem>
+					<menuitem onAction="apps(1)">Calculator</menuitem>
+					<menuitem onAction="apps(2)">Library</menuitem>
+				</menupopup>
+			</menu>
+			<container class="separator" />
+			<menuitem onAction="goMidpForm">MIDP2 Form</menuitem>
+		</menupopup>
+	</screenfirstmenu>
+	<screenSecondMenu onAction="!exit">Exit</screenSecondMenu>
+</screen>

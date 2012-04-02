@@ -1,0 +1,50 @@
+<screen style="align:center;layout:inlinelayout(false,fill)" title="mGenie Alpha 1.0">
+	<screenTopBar><picture src="mgenie_icon_16px.png" style="layout-data:sld(left,-1,-1)"/></screenTopBar>
+            <scrollPane showscrollbar="true" id="scrlpn">
+                    <list id='list'>
+
+                        <!-- <listItem style="layout:borderlayout;gap:2 0" onAction="goFriends">
+                                <picture src="icon_friends.png" style="layout-data:bld(west)" />
+                                <container style="layout:inlinelayout(false,fill)">
+                                        <text class="bolder">Friends</text>
+                                        <textarea class="small">View and chat you with friends</textarea>
+                                </container>
+                        </listItem> -->
+
+                        <listItem style="layout:borderlayout;gap:2 0" onAction="goServices">
+                                <picture src="icon_services.png" style="layout-data:bld(west)" />
+                                <container style="layout:inlinelayout(false,fill)">
+                                        <text class="bolder">Services</text>
+                                        <textarea class="small">Premium Chat Info services</textarea>
+                                </container>
+                        </listItem>
+
+                        <listItem style="layout:borderlayout;gap:2 0" onAction="goTopup">
+                                <picture src="icon_topup.png" style="layout-data:bld(west)" />
+                                <container style="layout:inlinelayout(false,fill)">
+                                        <text class="bolder">Topup</text>
+                                        <textarea class="small">Topup via Mpesa/Zap to consume premium services</textarea>
+                                </container>
+                        </listItem>
+
+                        <listItem style="layout:borderlayout;gap:2 0" onAction="goHelp">
+                                <picture src="icon_help.png" style="layout-data:bld(west)" />
+                                <container style="layout:inlinelayout(false,fill)">
+                                        <text class="bolder">Help</text>
+                                        <textarea class="small">System Help and FAQ</textarea>
+                                </container>
+                        </listItem>
+
+                    </list>
+            </scrollPane>
+
+	<screenfirstmenu>
+            Menu
+            <menupopup>
+                <menuitem onAction="goHelp">About</menuitem>
+                <menuitem onAction="goSnooze">Snooze</menuitem>
+            </menupopup>
+	</screenfirstmenu>
+
+	<screenSecondMenu onAction="!exit">Exit</screenSecondMenu>
+</screen>

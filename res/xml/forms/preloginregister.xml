@@ -1,0 +1,56 @@
+<screen>
+	<_title>%JOIN_TITLE%</_title>
+	<scrollPane style="align:fill-center;layout:inlinelayout(false,fill);gap:0 5">
+
+		<container class="formEntry" style="layout:gridlayout(2,1)">
+			%JOIN_NAMES%
+			<textfield id="fname">
+			</textfield>
+		</container>
+
+		<container class="formEntry" style="layout:gridlayout(2,1)">
+			%JOIN_USERNAME%
+			<textfield id="uname">
+				<_tooltip>%JOIN_USERNAME_TOOLTIP%</_tooltip>
+			</textfield>
+		</container>
+
+		<container class="formEntry" style="layout:gridlayout(2,1)">
+			%JOIN_EMAIL%
+			<textfield id="email">
+				<_tooltip>%JOIN_EMAIL_TOOLTIP%</_tooltip>
+			</textfield>
+		</container>
+
+		<container class="formEntry" style="layout:gridlayout(2,1)">
+			%JOIN_MOBILE%
+			<textfield id="mobile" constraints="numeric" style="align:right">
+				<_tooltip>%JOIN_MOBILE_TOOLTIP%</_tooltip>
+			</textfield>
+		</container>
+
+		<container class="formEntry" style="layout:gridlayout(2,1)">
+			%JOIN_GENDER%
+			<radioGroup id="sex" style="align:right;layout:inlinelayout(true,fill)">
+					<radiobutton value="M" style="gap:3 0">M</radiobutton>
+					<radiobutton value="F" style="gap:3 0">F</radiobutton>
+			</radioGroup>
+		</container>
+
+		<container class="formEntry" style="layout:gridlayout(2,1)">
+			%JOIN_PASSWORD%
+			<textfield id="pass" constraints="password" style="align:right">
+			</textfield>
+		</container>
+
+		<container class="formEntry" style="layout:gridlayout(2,1)">
+			%JOIN_PASSWORDC%
+			<textfield id="passc" constraints="password" style="align:right">
+				<_tooltip>%JOIN_PASSWORDC_TOOLTIP%</_tooltip>
+			</textfield>
+		</container>
+
+		<button onAction="processJoin(#fname.text, #uname.text, #email.text, #mobile.text, #sex.value, #pass.text, #passc.text)">%SEND%</button>
+	</scrollPane>
+	<screenfirstmenu onAction="back">%CANCEL%</screenfirstmenu>
+</screen>

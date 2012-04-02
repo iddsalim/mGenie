@@ -1,0 +1,32 @@
+<screen style="align:center;layout:inlinelayout(false,fill)" title="mGenie Alpha 1.0">
+	<screenTopBar><picture src="mgenie_icon_16px.png" style="layout-data:sld(left,-1,-1)"/></screenTopBar>
+
+        <container style="align:right;gap:2 0">
+                <radioGroup style="layout:inlinelayout(true,fill)">
+                        <radiobutton class="flags" onAction="setLang(en)">
+                            <picture>flag_en.png</picture>
+                        </radiobutton>
+                        <radiobutton class="flags" onAction="setLang(sh)">
+                            <picture>flag_ke.png</picture>
+                        </radiobutton>
+                        <radiobutton class="flags" onAction="setLang(sw)">
+                            <picture>flag_tz.png</picture>
+                        </radiobutton>
+                        <radiobutton class="flags" onAction="setLang(fr)">
+                            <picture>flag_fr.png</picture>
+                        </radiobutton>
+                </radioGroup>
+        </container>
+
+	<textarea text="Please use the menu to login or register. &lt;br/&gt;&lt;i&gt;(c) &lt;b&gt;Xema Labs, Kenya&lt;/b&gt; 2012&lt;/i&gt;" styled="true" style="align:center;layout-data:bld(south);color: #aaf4e0;" />
+	<screenfirstmenu>
+            Menu
+            <menupopup>
+               <menuitem onAction="goLogin">Login</menuitem>
+                <menuitem onAction="goJoin">Join</menuitem>
+                <menuitem onAction="goHelp">About</menuitem>
+            </menupopup>
+
+	</screenfirstmenu>
+	<screenSecondMenu onAction="!exit">Exit</screenSecondMenu>
+</screen>

@@ -1,0 +1,32 @@
+<screen cleanUpWhenRemoved="true">
+	<_title>Premium Services</_title>
+	<tabfolder class="library">
+		<tabitem style="layout:borderlayout">
+			<_label>Free</_label>
+			<!-- The library xml code -->
+			<scrollPane>
+				<list>
+					<_renderer><![CDATA[
+						<listitem>
+							<picture>chatstate${cState}.png</picture>
+							${cNames}
+						</listitem>
+					]]></_renderer>
+					<_items >@{lFriends}</_items>
+				</list>
+			</scrollPane>
+		</tabitem>
+
+		<tabitem>
+			<_label>Paid </_label>
+			<container>
+				<textarea class="library" styled="true"><![CDATA[
+					<b>No paid services available currently. <br/>Please check back <i><u>later</u></i></b>  <br/>
+				]]></textarea>
+			</container>
+		</tabitem>
+
+	</tabfolder>
+	<screenfirstmenu onAction="dashBoard">%BACK%</screenfirstmenu>
+	<screenSecondMenu onAction="popupChat">Use</screenSecondMenu>
+</screen>
